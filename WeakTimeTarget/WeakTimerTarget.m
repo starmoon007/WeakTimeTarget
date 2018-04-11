@@ -23,7 +23,7 @@ void travel(id self, SEL _cmd){
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)sel{
-    
+    // 添加空方法
     class_addMethod([self class], sel, (IMP)travel, "V@:");
     return  YES;
 }
